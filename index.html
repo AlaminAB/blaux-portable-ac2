@@ -24,7 +24,7 @@
   <title>Blaux Portable AC - Portable Air Cooler And Humidifier - OneTap Gadgets</title>
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick.css">
 </head>
@@ -301,66 +301,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
 
 <script>
-
-$('.slider-content').slick({
-
-  fade: false,
-	infinite: false,
-	speed: 800,
-
-    arrows: true,
-    prevArrow: null,
-         nextArrow: null,
-});
-$('.slider-thumb').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  asNavFor: '.slider-content',
-  dots: false,
-  centerMode: false,
-  focusOnSelect: true,
-  arrows: true,
-  prevArrow: null,
-         nextArrow: null,
-         infinite: false
-});
-
-$('a[data-slide]').click(function(e) {
-    e.preventDefault();
-    var slideno = $(this).data('slide');
-    $('.slider-content').slick('slickGoTo', slideno - 1);
-});
-
-var fbButton = document.getElementById('fb');
-    var twitter = document.getElementById('twitter')
-      var link = document.getElementById('link')
-var url = window.location.href;
-
-
-   fbButton.addEventListener('click', function() {
-    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
-        'facebook-share-dialog',
-        'width=800,height=600'
-    );
-    return false;
-}); 
-
-   twitter.addEventListener('click', function() {
-    window.open('https://twitter.com/share?' + url,
-        'facebook-share-dialog',
-        'width=800,height=600'
-    );
-    return false;
-}); 
-
-   link.addEventListener('click', function() {
-    window.open('ttp://pinterest.com/pin/create/link/?url=' + url,
-        'facebook-share-dialog',
-        'width=800,height=600'
-    );
-    return false;
-}); 
-
+$(".slider-content").slick({fade:!1,infinite:!1,speed:800,arrows:!0,prevArrow:null,nextArrow:null}),$(".slider-thumb").slick({slidesToShow:5,slidesToScroll:1,asNavFor:".slider-content",dots:!1,centerMode:!1,focusOnSelect:!0,arrows:!0,prevArrow:null,nextArrow:null,infinite:!1}),$("a[data-slide]").click(function(e){e.preventDefault();var t=$(this).data("slide");$(".slider-content").slick("slickGoTo",t-1)});var fbButton=document.getElementById("fb"),twitter=document.getElementById("twitter"),link=document.getElementById("link"),url=window.location.href;fbButton.addEventListener("click",function(){return window.open("https://www.facebook.com/sharer/sharer.php?u="+url,"facebook-share-dialog","width=800,height=600"),!1}),twitter.addEventListener("click",function(){return window.open("https://twitter.com/share?"+url,"facebook-share-dialog","width=800,height=600"),!1}),link.addEventListener("click",function(){return window.open("ttp://pinterest.com/pin/create/link/?url="+url,"facebook-share-dialog","width=800,height=600"),!1});
 </script>
 
 
